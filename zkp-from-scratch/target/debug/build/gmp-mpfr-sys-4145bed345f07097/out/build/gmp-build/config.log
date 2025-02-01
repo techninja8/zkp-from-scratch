@@ -27,6 +27,7 @@ uname -v = #4355-Microsoft Thu Apr 12 17:37:00 PST 2024
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /home/tnxl/.local/share/nvim/mason/bin
 PATH: /home/tnxl/.cargo/bin
 PATH: /home/tnxl/.local/bin
 PATH: /home/tnxl/bin
@@ -2751,7 +2752,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for attr_get
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccyVQYIy.o: in function `main':
+/usr/bin/ld: /tmp/ccxomJfS.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `attr_get'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -2867,7 +2868,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for cputime
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccjdkNjE.o: in function `main':
+/usr/bin/ld: /tmp/ccInKJfK.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `cputime'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -2992,7 +2993,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for getsysinfo
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccrrCzpL.o: in function `main':
+/usr/bin/ld: /tmp/ccOYydyF.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `getsysinfo'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3142,7 +3143,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for processor_info
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccw8D3HC.o: in function `main':
+/usr/bin/ld: /tmp/ccjNbPOo.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `processor_info'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3265,7 +3266,7 @@ configure: failed program was:
 configure:24675: result: no
 configure:24675: checking for pstat_getprocessor
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccuAKa1w.o: in function `main':
+/usr/bin/ld: /tmp/cc4DXBDV.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `pstat_getprocessor'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3392,7 +3393,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for read_real_time
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccYLdxKl.o: in function `main':
+/usr/bin/ld: /tmp/ccHco5jd.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `read_real_time'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3524,13 +3525,13 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for sigstack
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccCcS16T.o: in function `main':
+/usr/bin/ld: /tmp/ccQ7fq4r.o: in function `main':
 conftest.c:(.text.startup+0x7): warning: the `sigstack' function is dangerous.  `sigaltstack' should be used instead.
 configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for syssgi
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/cctl6YOV.o: in function `main':
+/usr/bin/ld: /tmp/ccIjcweO.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `syssgi'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3690,7 +3691,7 @@ configure:24675: $? = 0
 configure:24675: result: yes
 configure:24675: checking for sysctl
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccZQcX01.o: in function `main':
+/usr/bin/ld: /tmp/ccX95PSr.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `sysctl'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -3823,7 +3824,7 @@ configure: failed program was:
 configure:24675: result: no
 configure:24675: checking for sysctlbyname
 configure:24675: gcc -o conftest -O2 -pedantic -fomit-frame-pointer -m64   conftest.c  >&5
-/usr/bin/ld: /tmp/ccbdDOa7.o: in function `main':
+/usr/bin/ld: /tmp/cc85OINR.o: in function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `sysctlbyname'
 collect2: error: ld returned 1 exit status
 configure:24675: $? = 1
@@ -4205,6 +4206,9 @@ configure:24862: result: no
 configure:25606: checking for suitable m4
 trying m4
 ../gmp-src/configure: line 25625: m4: command not found
+
+trying /home/tnxl/.local/share/nvim/mason/bin/m4
+../gmp-src/configure: line 25635: /home/tnxl/.local/share/nvim/mason/bin/m4: No such file or directory
 
 trying /home/tnxl/.cargo/bin/m4
 ../gmp-src/configure: line 25635: /home/tnxl/.cargo/bin/m4: No such file or directory
