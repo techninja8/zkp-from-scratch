@@ -1,0 +1,11 @@
+/home/tnxl/zkp-from-scratch/zkp-from-scratch/target/debug/deps/libark_serialize-94336826406a321e.rmeta: /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/lib.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/error.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/flags.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/impls.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/../README.md
+
+/home/tnxl/zkp-from-scratch/zkp-from-scratch/target/debug/deps/libark_serialize-94336826406a321e.rlib: /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/lib.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/error.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/flags.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/impls.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/../README.md
+
+/home/tnxl/zkp-from-scratch/zkp-from-scratch/target/debug/deps/ark_serialize-94336826406a321e.d: /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/lib.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/error.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/flags.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/impls.rs /home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/../README.md
+
+/home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/lib.rs:
+/home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/error.rs:
+/home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/flags.rs:
+/home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/impls.rs:
+/home/tnxl/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-serialize-0.5.0/src/../README.md:
