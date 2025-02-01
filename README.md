@@ -15,8 +15,9 @@ The goal is to learn these key components of ZKP by **deconstructing** and **reb
 ✅ **No External zk Libraries**: This is a from-scratch implementation without reliance on zk-friendly Rust libraries.  
 
 ## Project Structure
-```
+
 For now, this is pretty much how the project structure would look like, I'll be updating it as it increase
+```
 zkp-from-scratch/
 │── src/                          # Source code
 │   ├── interactive/               # Interactive ZKPs (e.g., Schnorr)
