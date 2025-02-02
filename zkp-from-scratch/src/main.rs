@@ -1,20 +1,25 @@
+#![allow(deprecated)]
+#![allow(unused_imports)]
+
+use num_integer::Integer;
 use num_bigint::{BigInt, RandBigInt};
 use rand::thread_rng;
 use num_traits::{One, Zero};
 use sha2::{Sha256, Digest};
 
 
-const P: &str = "";
+const P: &str = "FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD1";
 const G: u32 = 2;
 
-fn mod(base:&BigInt, exp:&BigInt, modulus:&BigInt) -> BigInt {
+fn mod_exp(base:&BigInt, exp:&BigInt, modulus:&BigInt) -> BigInt {
     base.modpow(exp, modulus) // base^exp % modulus
 }
 
 fn hash_to_challenge(t:&BigInt) -> BigInt {
     let mut hasher = Sha256::new();
-    hasher.update(t.to_bytes_be());
-    BigInt::from_bytes_be(num_bigint::Sign::Plus, &hasher.finalize());
+    hasher.update(t.to_bytes_be().1);
+    let hash_result = hasher.finalize();
+    BigInt::from_bytes_be(num_bigint::Sign::Plus, &hash_result)
 }
 
 fn schnorr_prove(secret:&BigInt, p:&BigInt) -> (BigInt, BigInt) {
@@ -22,7 +27,7 @@ fn schnorr_prove(secret:&BigInt, p:&BigInt) -> (BigInt, BigInt) {
     let r = rng.gen_bigint_range(&BigInt::zero(), p); // generate random r 
     let t = mod_exp(&BigInt::from(G), &r, p);
     let c = hash_to_challenge(&t);
-    let s = (r + c * secret) % p;
+    let s = (r + c * secret).mod_floor(p); // use mod_floor to ensure non-negative results
     (t, s)
 }
 
