@@ -27,13 +27,14 @@ fn schnorr_prove(secret:&BigInt, p:&BigInt) -> (BigInt, BigInt, BigInt) {
     let r = rng.gen_bigint_range(&BigInt::zero(), p); // generate random r 
     let t = mod_exp(&BigInt::from(G), &r, p);
     let c = hash_to_challenge(&t);
-    let s = (r + c * secret).mod_floor(p); // use mod_floor to ensure non-negative results
+    let s = (r + c.clone() * secret).mod_floor(p); // use mod_floor to ensure non-negative results
     (t, s, c)
 }
 
-fn schnorr_verify(t:&BigInt, s:&BigInt, public:&BigInt, p:&BigInt) -> bool {
+fn schnorr_verify(t:&BigInt, s:&BigInt, public:&BigInt, p:&BigInt, c:&BigInt) -> bool {
     let lhs = mod_exp(&BigInt::from(G), s, p);
-    let rhs = (t * mod_exp(public, &hash_to_challenge(t), p)) % p; // Computes t * h^c mod p 
+    // let rhs = (t * mod_exp(public, &hash_to_challenge(t), p)) % p; // Computes t * h^c mod p 
+    let rhs = (t * mod_exp(public, c, p)) % p;
     lhs == rhs // verifies g^s = t * h^c 
 }
 
@@ -46,7 +47,7 @@ fn main() {
 
     println!("Prover: SENT (t={}, s={})", t, s);
 
-    let valid = schnorr_verify(&t, &s, &public, &p);
+    let valid = schnorr_verify(&t, &s, &public, &p, &c);
     println!("Verifier: PROOF IS {}", valid);
 
 }
