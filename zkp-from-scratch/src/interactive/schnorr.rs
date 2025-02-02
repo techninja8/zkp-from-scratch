@@ -1,4 +1,4 @@
-/* #![allow(deprecated)]
+#![allow(deprecated)]
 #![allow(unused_imports)]
 
 use num_integer::Integer;
@@ -50,13 +50,6 @@ fn main() {
     let valid = schnorr_verify(&t, &s, &public, &p, &c);
     println!("Verifier: PROOF IS {}", valid);
 
-} */
-use num_bigint::BigInt;
-
-fn main() {
-    let some_num = BigInt::new();
-
-    println!("{:?}", some_num);
 }
 
 
