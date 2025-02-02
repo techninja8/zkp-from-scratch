@@ -22,13 +22,13 @@ fn hash_to_challenge(t:&BigInt) -> BigInt {
     BigInt::from_bytes_be(num_bigint::Sign::Plus, &hash_result)
 }
 
-fn schnorr_prove(secret:&BigInt, p:&BigInt) -> (BigInt, BigInt) {
+fn schnorr_prove(secret:&BigInt, p:&BigInt) -> (BigInt, BigInt, BigInt) {
     let mut rng = thread_rng();
     let r = rng.gen_bigint_range(&BigInt::zero(), p); // generate random r 
     let t = mod_exp(&BigInt::from(G), &r, p);
     let c = hash_to_challenge(&t);
     let s = (r + c * secret).mod_floor(p); // use mod_floor to ensure non-negative results
-    (t, s)
+    (t, s, c)
 }
 
 fn schnorr_verify(t:&BigInt, s:&BigInt, public:&BigInt, p:&BigInt) -> bool {
@@ -42,7 +42,7 @@ fn main() {
     let secret_value = BigInt::from(42); // Private key x 
     let public = mod_exp(&BigInt::from(G), &secret_value, &p); // Public key h = g^x mod p 
     
-    let (t, s) = schnorr_prove(&secret_value, &p);
+    let (t, s, c) = schnorr_prove(&secret_value, &p);
 
     println!("Prover: SENT (t={}, s={})", t, s);
 
