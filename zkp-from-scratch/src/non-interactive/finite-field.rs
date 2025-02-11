@@ -10,5 +10,5 @@ pub struct FiniteField<P: u128> {
 impl<P: u128> FiniteField<P> {
     pub fn new(value: u128) -> Self {
         Self { value: value % p }
-    }
+     }
 }
