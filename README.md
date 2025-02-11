@@ -1,5 +1,7 @@
 # Zero-Knowledge Proofs from Scratch in Rust
 
+Pls note, this project is still under development.
+
 ## Overview
 This repository contains a **from-scratch** implementation of various Zero-Knowledge Proof (ZKP) systems in Rust, covering:
 - **Interactive Proofs** (e.g., Schnorr, Sigma Protocols)
@@ -24,23 +26,6 @@ zkp-from-scratch/
 │   ├── interactive/               # Interactive ZKPs (e.g., Schnorr)
 │   │   ├── schnorr.rs             # Schnorr Protocol Implementation
 │   │   ├── sigma.rs               # Sigma Protocols
-│   │   ├── mod.rs                 # Module file
-│   ├── non_interactive/           # Non-Interactive (Fiat-Shamir, zk-SNARKs, zk-STARKs)
-│   │   ├── fiat_shamir.rs         # Fiat-Shamir Transformation
-│   │   ├── r1cs.rs                # Rank-1 Constraint Systems (R1CS)
-│   │   ├── qap.rs                 # Quadratic Arithmetic Programs (QAP)
-│   │   ├── snark.rs               # Basic zk-SNARK implementation
-│   │   ├── stark.rs               # Basic zk-STARK implementation
-│   │   ├── mod.rs                 # Module file
-│   ├── utils/                     # Helper functions (hashing, elliptic curves, FFT)
-│   │   ├── finite_field.rs         # Finite field arithmetic
-│   │   ├── elliptic_curve.rs       # Elliptic curve operations
-│   │   ├── fft.rs                  # Fast Fourier Transform (FFT) for STARKs
-│   │   ├── mod.rs                  # Module file
-│── examples/                      # Example use cases
-│   ├── schnorr_demo.rs            # Running Schnorr protocol
-│   ├── snark_demo.rs              # Running zk-SNARK
-│   ├── stark_demo.rs              # Running zk-STARK
 │── tests/                         # Unit and integration tests
 │── Cargo.toml                     # Rust dependencies and metadata
 │── README.md                      # Project documentation
